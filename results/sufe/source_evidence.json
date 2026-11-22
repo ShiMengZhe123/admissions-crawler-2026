@@ -1,0 +1,35 @@
+{
+  "source_page": "https://zs.sufe.edu.cn/zsjh/list.htm",
+  "query_iframe": "https://zs.sufe.edu.cn/_web/_apps/commonquery/commonquery/api/queryMatch/26.rst?_p=YXM9OTYmdD02MDUmcD0xJm09TiY_&mongo=false",
+  "status": "blocked_by_captcha",
+  "captcha_required": true,
+  "notes": "校方历年招生计划查询使用 commonquery/26，要求四位数字验证码；未尝试绕过。招生亮点页没有分省明细；专业目录页当前重定向到 page.psp 并返回 410，因此不作为数据源。",
+  "page": {
+    "url": "https://zs.sufe.edu.cn/zsjh/list.htm",
+    "http_status": 200,
+    "title": "招生网",
+    "bytes": 13762,
+    "has_validate_image": false,
+    "has_2026_option": false
+  },
+  "iframe": {
+    "url": "https://zs.sufe.edu.cn/_web/_apps/commonquery/commonquery/api/queryMatch/26.rst?_p=YXM9OTYmdD02MDUmcD0xJm09TiY_&mongo=false",
+    "http_status": 200,
+    "title": "多记录查询",
+    "bytes": 9132,
+    "has_validate_image": true,
+    "has_2026_option": true
+  },
+  "plan_highlights": {
+    "url": "https://zs.sufe.edu.cn/0b/08/c3343a264968/page.htm",
+    "http_status": 200,
+    "title": "全新升级|上海财经大学2026年本科招生亮点",
+    "bytes": 45621,
+    "has_validate_image": false,
+    "has_2026_option": true
+  },
+  "program_catalog": {
+    "url": "https://zs.sufe.edu.cn/08/c0/c3343a264384/page.htm",
+    "error": "请求失败: https://zs.sufe.edu.cn/08/c0/c3343a264384/page.htm: 410 Client Error:  for url: https://zs.sufe.edu.cn/08/c0/c3343a264384/page.psp"
+  }
+}

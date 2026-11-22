@@ -1,0 +1,27 @@
+{
+  "official_url": "https://zs.hebut.edu.cn/",
+  "main_source": "https://www.hebut.edu.cn/",
+  "plan_page": {
+    "requested_url": "https://zs.hebut.edu.cn/Baokao/fenshu.html",
+    "final_url": "https://zs.hebut.edu.cn/rump_frontend/access_forbidden/",
+    "http_status": 403,
+    "title": "403",
+    "bytes": 4356
+  },
+  "status": "blocked_http_403",
+  "notes": "校方本科生招生入口由学校主站公开发布，但招生子站及其“录取分数及计划”公开路径均返回 403。",
+  "main": {
+    "requested_url": "https://www.hebut.edu.cn/",
+    "final_url": "https://www.hebut.edu.cn/",
+    "http_status": 200,
+    "title": "河北工业大学",
+    "bytes": 55243
+  },
+  "admissions": {
+    "requested_url": "https://zs.hebut.edu.cn/",
+    "final_url": "https://zs.hebut.edu.cn/rump_frontend/access_forbidden/",
+    "http_status": 403,
+    "title": "403",
+    "bytes": 4356
+  }
+}

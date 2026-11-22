@@ -1,0 +1,788 @@
+{
+  "connection": {
+    "db": "admissions",
+    "version": "8.0.41"
+  },
+  "tables": [
+    {
+      "TABLE_NAME": "admission_plan",
+      "TABLE_TYPE": "BASE TABLE",
+      "rows": 758,
+      "columns": [
+        {
+          "COLUMN_NAME": "admission_year",
+          "COLUMN_TYPE": "smallint unsigned",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "school",
+          "COLUMN_TYPE": "varchar(40)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "province",
+          "COLUMN_TYPE": "varchar(24)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "subject_type",
+          "COLUMN_TYPE": "varchar(40)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "plan_type",
+          "COLUMN_TYPE": "varchar(40)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "major_code",
+          "COLUMN_TYPE": "varchar(16)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "major_name",
+          "COLUMN_TYPE": "varchar(160)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "planned_count",
+          "COLUMN_TYPE": "int unsigned",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "source_url",
+          "COLUMN_TYPE": "varchar(512)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "extraction_method",
+          "COLUMN_TYPE": "varchar(12)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        }
+      ]
+    },
+    {
+      "TABLE_NAME": "admission_plan_backup_20261122_091849",
+      "TABLE_TYPE": "BASE TABLE",
+      "rows": 758,
+      "columns": [
+        {
+          "COLUMN_NAME": "admission_year",
+          "COLUMN_TYPE": "smallint unsigned",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "school",
+          "COLUMN_TYPE": "varchar(40)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "province",
+          "COLUMN_TYPE": "varchar(24)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "subject_type",
+          "COLUMN_TYPE": "varchar(40)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "plan_type",
+          "COLUMN_TYPE": "varchar(40)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "major_code",
+          "COLUMN_TYPE": "varchar(16)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "major_name",
+          "COLUMN_TYPE": "varchar(160)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "planned_count",
+          "COLUMN_TYPE": "int unsigned",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "source_url",
+          "COLUMN_TYPE": "varchar(512)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "extraction_method",
+          "COLUMN_TYPE": "varchar(12)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        }
+      ]
+    },
+    {
+      "TABLE_NAME": "admission_plan_v2",
+      "TABLE_TYPE": "BASE TABLE",
+      "rows": 3047,
+      "columns": [
+        {
+          "COLUMN_NAME": "id",
+          "COLUMN_TYPE": "bigint unsigned",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": "auto_increment"
+        },
+        {
+          "COLUMN_NAME": "admission_year",
+          "COLUMN_TYPE": "smallint unsigned",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "school",
+          "COLUMN_TYPE": "varchar(40)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "MUL",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "province",
+          "COLUMN_TYPE": "varchar(40)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "college_name",
+          "COLUMN_TYPE": "varchar(200)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "major_code",
+          "COLUMN_TYPE": "varchar(32)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "major_name",
+          "COLUMN_TYPE": "varchar(240)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "subject_type",
+          "COLUMN_TYPE": "varchar(80)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "batch_name",
+          "COLUMN_TYPE": "varchar(120)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "plan_type",
+          "COLUMN_TYPE": "varchar(120)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "selection_subject",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "fee_text",
+          "COLUMN_TYPE": "varchar(160)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "planned_count",
+          "COLUMN_TYPE": "int unsigned",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "source_url",
+          "COLUMN_TYPE": "varchar(1000)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "source_image",
+          "COLUMN_TYPE": "varchar(500)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "source_row",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "source_box",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "extraction_method",
+          "COLUMN_TYPE": "varchar(16)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "review_status",
+          "COLUMN_TYPE": "varchar(32)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "MUL",
+          "COLUMN_DEFAULT": "未验证",
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "review_reason",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "record_hash",
+          "COLUMN_TYPE": "char(64)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "UNI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "fetched_at",
+          "COLUMN_TYPE": "timestamp",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": "CURRENT_TIMESTAMP",
+          "EXTRA": "DEFAULT_GENERATED"
+        },
+        {
+          "COLUMN_NAME": "updated_at",
+          "COLUMN_TYPE": "timestamp",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": "CURRENT_TIMESTAMP",
+          "EXTRA": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "TABLE_NAME": "nuc_ocr_raw",
+      "TABLE_TYPE": "BASE TABLE",
+      "rows": 16153,
+      "columns": [
+        {
+          "COLUMN_NAME": "id",
+          "COLUMN_TYPE": "bigint",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": "auto_increment"
+        },
+        {
+          "COLUMN_NAME": "admission_year",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "school",
+          "COLUMN_TYPE": "varchar(100)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "province",
+          "COLUMN_TYPE": "varchar(30)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "MUL",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "image_name",
+          "COLUMN_TYPE": "varchar(255)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "box_index",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "recognized_text",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "confidence",
+          "COLUMN_TYPE": "float",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "box_json",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        }
+      ]
+    },
+    {
+      "TABLE_NAME": "nuc_ocr_validation",
+      "TABLE_TYPE": "BASE TABLE",
+      "rows": 0,
+      "columns": [
+        {
+          "COLUMN_NAME": "id",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": "auto_increment"
+        },
+        {
+          "COLUMN_NAME": "province",
+          "COLUMN_TYPE": "varchar(50)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "MUL",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "image_name",
+          "COLUMN_TYPE": "varchar(120)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "row_index",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "major_name",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "planned_count",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "correct_major",
+          "COLUMN_TYPE": "varchar(255)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "correct_count",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "is_correct",
+          "COLUMN_TYPE": "tinyint",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        }
+      ]
+    },
+    {
+      "TABLE_NAME": "nuc_plan_parsed",
+      "TABLE_TYPE": "BASE TABLE",
+      "rows": 1372,
+      "columns": [
+        {
+          "COLUMN_NAME": "id",
+          "COLUMN_TYPE": "bigint",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": "auto_increment"
+        },
+        {
+          "COLUMN_NAME": "admission_year",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "MUL",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "school",
+          "COLUMN_TYPE": "varchar(100)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "province",
+          "COLUMN_TYPE": "varchar(50)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "image_name",
+          "COLUMN_TYPE": "varchar(120)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "row_index",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "college_name",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "major_name",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "subject_type",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "batch_name",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "planned_count",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "fee_text",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "review_status",
+          "COLUMN_TYPE": "varchar(20)",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "review_reason",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        }
+      ]
+    },
+    {
+      "TABLE_NAME": "nuc_plan_v2",
+      "TABLE_TYPE": "BASE TABLE",
+      "rows": 1323,
+      "columns": [
+        {
+          "COLUMN_NAME": "id",
+          "COLUMN_TYPE": "bigint",
+          "IS_NULLABLE": "NO",
+          "COLUMN_KEY": "PRI",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": "auto_increment"
+        },
+        {
+          "COLUMN_NAME": "admission_year",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "MUL",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "school",
+          "COLUMN_TYPE": "varchar(100)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "province",
+          "COLUMN_TYPE": "varchar(50)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "image_name",
+          "COLUMN_TYPE": "varchar(120)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "row_index",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "college_name",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "major_name",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "subject_type",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "batch_name",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "planned_count",
+          "COLUMN_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "review_status",
+          "COLUMN_TYPE": "varchar(20)",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        },
+        {
+          "COLUMN_NAME": "review_reason",
+          "COLUMN_TYPE": "text",
+          "IS_NULLABLE": "YES",
+          "COLUMN_KEY": "",
+          "COLUMN_DEFAULT": null,
+          "EXTRA": ""
+        }
+      ]
+    }
+  ],
+  "schools": [
+    {
+      "school": "上海财经大学",
+      "rows_count": 34,
+      "planned_total": "84"
+    },
+    {
+      "school": "东北大学",
+      "rows_count": 746,
+      "planned_total": "4596"
+    },
+    {
+      "school": "中北大学",
+      "rows_count": 1486,
+      "planned_total": "7594"
+    },
+    {
+      "school": "山西师范大学",
+      "rows_count": 758,
+      "planned_total": "5100"
+    },
+    {
+      "school": "河北工业大学",
+      "rows_count": 23,
+      "planned_total": "73"
+    }
+  ]
+}

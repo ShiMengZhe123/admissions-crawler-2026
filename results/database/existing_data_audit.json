@@ -1,0 +1,720 @@
+{
+  "admission_plan_summary": [
+    {
+      "admission_year": 2026,
+      "school": "山西师范大学",
+      "rows_count": 758,
+      "province_count": 29,
+      "planned_total": "5100"
+    }
+  ],
+  "admission_plan_quality": [
+    {
+      "admission_year": 2026,
+      "school": "山西师范大学",
+      "empty_major": "0",
+      "empty_province": "0",
+      "empty_subject": "5",
+      "empty_plan_type": "0",
+      "empty_source": "0",
+      "invalid_count": "0"
+    }
+  ],
+  "admission_plan_provinces": [
+    {
+      "school": "山西师范大学",
+      "province": "不分省",
+      "rows_count": 15,
+      "planned_total": "32"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "云南",
+      "rows_count": 29,
+      "planned_total": "58"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "内蒙古",
+      "rows_count": 25,
+      "planned_total": "25"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "北京",
+      "rows_count": 3,
+      "planned_total": "3"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "吉林",
+      "rows_count": 27,
+      "planned_total": "46"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "四川",
+      "rows_count": 21,
+      "planned_total": "24"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "天津",
+      "rows_count": 30,
+      "planned_total": "58"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "安徽",
+      "rows_count": 28,
+      "planned_total": "32"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "山东",
+      "rows_count": 38,
+      "planned_total": "70"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "山西",
+      "rows_count": 78,
+      "planned_total": "3981"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "广东",
+      "rows_count": 35,
+      "planned_total": "67"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "广西",
+      "rows_count": 31,
+      "planned_total": "54"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "新疆",
+      "rows_count": 15,
+      "planned_total": "40"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "江苏",
+      "rows_count": 29,
+      "planned_total": "40"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "江西",
+      "rows_count": 28,
+      "planned_total": "55"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "河北",
+      "rows_count": 41,
+      "planned_total": "81"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "河南",
+      "rows_count": 32,
+      "planned_total": "55"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "浙江",
+      "rows_count": 15,
+      "planned_total": "20"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "海南",
+      "rows_count": 16,
+      "planned_total": "17"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "湖北",
+      "rows_count": 24,
+      "planned_total": "30"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "湖南",
+      "rows_count": 29,
+      "planned_total": "32"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "甘肃",
+      "rows_count": 25,
+      "planned_total": "45"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "福建",
+      "rows_count": 27,
+      "planned_total": "40"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "贵州",
+      "rows_count": 16,
+      "planned_total": "28"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "辽宁",
+      "rows_count": 18,
+      "planned_total": "25"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "重庆",
+      "rows_count": 15,
+      "planned_total": "30"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "陕西",
+      "rows_count": 38,
+      "planned_total": "62"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "青海",
+      "rows_count": 10,
+      "planned_total": "20"
+    },
+    {
+      "school": "山西师范大学",
+      "province": "黑龙江",
+      "rows_count": 20,
+      "planned_total": "30"
+    }
+  ],
+  "nuc_raw_summary": [
+    {
+      "province": "上海",
+      "text_boxes": 222,
+      "images": 1
+    },
+    {
+      "province": "云南",
+      "text_boxes": 597,
+      "images": 1
+    },
+    {
+      "province": "内蒙古",
+      "text_boxes": 728,
+      "images": 3
+    },
+    {
+      "province": "北京",
+      "text_boxes": 179,
+      "images": 1
+    },
+    {
+      "province": "吉林",
+      "text_boxes": 521,
+      "images": 1
+    },
+    {
+      "province": "四川",
+      "text_boxes": 505,
+      "images": 1
+    },
+    {
+      "province": "天津",
+      "text_boxes": 588,
+      "images": 2
+    },
+    {
+      "province": "宁夏",
+      "text_boxes": 378,
+      "images": 1
+    },
+    {
+      "province": "安徽",
+      "text_boxes": 605,
+      "images": 1
+    },
+    {
+      "province": "山东",
+      "text_boxes": 770,
+      "images": 1
+    },
+    {
+      "province": "山西",
+      "text_boxes": 1707,
+      "images": 7
+    },
+    {
+      "province": "广东",
+      "text_boxes": 515,
+      "images": 1
+    },
+    {
+      "province": "广西",
+      "text_boxes": 373,
+      "images": 1
+    },
+    {
+      "province": "新疆",
+      "text_boxes": 468,
+      "images": 1
+    },
+    {
+      "province": "江苏",
+      "text_boxes": 404,
+      "images": 1
+    },
+    {
+      "province": "江西",
+      "text_boxes": 337,
+      "images": 1
+    },
+    {
+      "province": "河北",
+      "text_boxes": 714,
+      "images": 3
+    },
+    {
+      "province": "河南",
+      "text_boxes": 770,
+      "images": 1
+    },
+    {
+      "province": "浙江",
+      "text_boxes": 164,
+      "images": 1
+    },
+    {
+      "province": "海南",
+      "text_boxes": 460,
+      "images": 1
+    },
+    {
+      "province": "湖北",
+      "text_boxes": 696,
+      "images": 1
+    },
+    {
+      "province": "湖南",
+      "text_boxes": 687,
+      "images": 1
+    },
+    {
+      "province": "甘肃",
+      "text_boxes": 269,
+      "images": 1
+    },
+    {
+      "province": "福建",
+      "text_boxes": 562,
+      "images": 1
+    },
+    {
+      "province": "西藏",
+      "text_boxes": 52,
+      "images": 1
+    },
+    {
+      "province": "贵州",
+      "text_boxes": 328,
+      "images": 1
+    },
+    {
+      "province": "辽宁",
+      "text_boxes": 573,
+      "images": 1
+    },
+    {
+      "province": "重庆",
+      "text_boxes": 512,
+      "images": 1
+    },
+    {
+      "province": "陕西",
+      "text_boxes": 737,
+      "images": 1
+    },
+    {
+      "province": "青海",
+      "text_boxes": 174,
+      "images": 1
+    },
+    {
+      "province": "黑龙江",
+      "text_boxes": 558,
+      "images": 1
+    }
+  ],
+  "nuc_parsed_summary": [
+    {
+      "province": "上海",
+      "rows_count": 1,
+      "planned_total": "21",
+      "pending_review": "1"
+    },
+    {
+      "province": "云南",
+      "rows_count": 60,
+      "planned_total": "343",
+      "pending_review": "60"
+    },
+    {
+      "province": "内蒙古",
+      "rows_count": 71,
+      "planned_total": "390",
+      "pending_review": "71"
+    },
+    {
+      "province": "北京",
+      "rows_count": 19,
+      "planned_total": "52",
+      "pending_review": "19"
+    },
+    {
+      "province": "吉林",
+      "rows_count": 49,
+      "planned_total": "253",
+      "pending_review": "49"
+    },
+    {
+      "province": "四川",
+      "rows_count": 47,
+      "planned_total": "399",
+      "pending_review": "47"
+    },
+    {
+      "province": "天津",
+      "rows_count": 54,
+      "planned_total": "234",
+      "pending_review": "54"
+    },
+    {
+      "province": "宁夏",
+      "rows_count": 32,
+      "planned_total": "100",
+      "pending_review": "32"
+    },
+    {
+      "province": "安徽",
+      "rows_count": 57,
+      "planned_total": "653",
+      "pending_review": "57"
+    },
+    {
+      "province": "山东",
+      "rows_count": 71,
+      "planned_total": "740",
+      "pending_review": "71"
+    },
+    {
+      "province": "山西",
+      "rows_count": 151,
+      "planned_total": "3891",
+      "pending_review": "151"
+    },
+    {
+      "province": "广东",
+      "rows_count": 47,
+      "planned_total": "389",
+      "pending_review": "47"
+    },
+    {
+      "province": "广西",
+      "rows_count": 38,
+      "planned_total": "151",
+      "pending_review": "38"
+    },
+    {
+      "province": "江苏",
+      "rows_count": 35,
+      "planned_total": "115",
+      "pending_review": "35"
+    },
+    {
+      "province": "江西",
+      "rows_count": 34,
+      "planned_total": "143",
+      "pending_review": "34"
+    },
+    {
+      "province": "河北",
+      "rows_count": 69,
+      "planned_total": "649",
+      "pending_review": "69"
+    },
+    {
+      "province": "河南",
+      "rows_count": 71,
+      "planned_total": "460",
+      "pending_review": "71"
+    },
+    {
+      "province": "浙江",
+      "rows_count": 17,
+      "planned_total": "107",
+      "pending_review": "17"
+    },
+    {
+      "province": "海南",
+      "rows_count": 39,
+      "planned_total": "159",
+      "pending_review": "39"
+    },
+    {
+      "province": "湖北",
+      "rows_count": 69,
+      "planned_total": "451",
+      "pending_review": "69"
+    },
+    {
+      "province": "湖南",
+      "rows_count": 59,
+      "planned_total": "266",
+      "pending_review": "59"
+    },
+    {
+      "province": "甘肃",
+      "rows_count": 24,
+      "planned_total": "86",
+      "pending_review": "24"
+    },
+    {
+      "province": "福建",
+      "rows_count": 53,
+      "planned_total": "206",
+      "pending_review": "53"
+    },
+    {
+      "province": "西藏",
+      "rows_count": 5,
+      "planned_total": "16",
+      "pending_review": "5"
+    },
+    {
+      "province": "贵州",
+      "rows_count": 32,
+      "planned_total": "118",
+      "pending_review": "32"
+    },
+    {
+      "province": "辽宁",
+      "rows_count": 53,
+      "planned_total": "227",
+      "pending_review": "53"
+    },
+    {
+      "province": "重庆",
+      "rows_count": 48,
+      "planned_total": "301",
+      "pending_review": "48"
+    },
+    {
+      "province": "陕西",
+      "rows_count": 1,
+      "planned_total": "305",
+      "pending_review": "1"
+    },
+    {
+      "province": "青海",
+      "rows_count": 16,
+      "planned_total": "40",
+      "pending_review": "16"
+    },
+    {
+      "province": "黑龙江",
+      "rows_count": 50,
+      "planned_total": "206",
+      "pending_review": "50"
+    }
+  ],
+  "nuc_v2_summary": [
+    {
+      "province": "上海",
+      "rows_count": 19,
+      "planned_total": "42",
+      "pending_review": "19"
+    },
+    {
+      "province": "云南",
+      "rows_count": 60,
+      "planned_total": "343",
+      "pending_review": "60"
+    },
+    {
+      "province": "内蒙古",
+      "rows_count": 71,
+      "planned_total": "390",
+      "pending_review": "71"
+    },
+    {
+      "province": "北京",
+      "rows_count": 19,
+      "planned_total": "52",
+      "pending_review": "19"
+    },
+    {
+      "province": "吉林",
+      "rows_count": 49,
+      "planned_total": "253",
+      "pending_review": "49"
+    },
+    {
+      "province": "四川",
+      "rows_count": 47,
+      "planned_total": "399",
+      "pending_review": "47"
+    },
+    {
+      "province": "天津",
+      "rows_count": 54,
+      "planned_total": "234",
+      "pending_review": "54"
+    },
+    {
+      "province": "宁夏",
+      "rows_count": 32,
+      "planned_total": "100",
+      "pending_review": "32"
+    },
+    {
+      "province": "安徽",
+      "rows_count": 57,
+      "planned_total": "653",
+      "pending_review": "57"
+    },
+    {
+      "province": "山东",
+      "rows_count": 71,
+      "planned_total": "740",
+      "pending_review": "71"
+    },
+    {
+      "province": "山西",
+      "rows_count": 150,
+      "planned_total": "3889",
+      "pending_review": "150"
+    },
+    {
+      "province": "广东",
+      "rows_count": 47,
+      "planned_total": "389",
+      "pending_review": "47"
+    },
+    {
+      "province": "新疆",
+      "rows_count": 12,
+      "planned_total": "34",
+      "pending_review": "12"
+    },
+    {
+      "province": "江苏",
+      "rows_count": 35,
+      "planned_total": "115",
+      "pending_review": "35"
+    },
+    {
+      "province": "江西",
+      "rows_count": 34,
+      "planned_total": "143",
+      "pending_review": "34"
+    },
+    {
+      "province": "河北",
+      "rows_count": 69,
+      "planned_total": "649",
+      "pending_review": "69"
+    },
+    {
+      "province": "河南",
+      "rows_count": 71,
+      "planned_total": "460",
+      "pending_review": "71"
+    },
+    {
+      "province": "浙江",
+      "rows_count": 17,
+      "planned_total": "107",
+      "pending_review": "17"
+    },
+    {
+      "province": "湖北",
+      "rows_count": 69,
+      "planned_total": "451",
+      "pending_review": "69"
+    },
+    {
+      "province": "湖南",
+      "rows_count": 59,
+      "planned_total": "266",
+      "pending_review": "59"
+    },
+    {
+      "province": "甘肃",
+      "rows_count": 24,
+      "planned_total": "86",
+      "pending_review": "24"
+    },
+    {
+      "province": "福建",
+      "rows_count": 53,
+      "planned_total": "206",
+      "pending_review": "53"
+    },
+    {
+      "province": "西藏",
+      "rows_count": 5,
+      "planned_total": "16",
+      "pending_review": "5"
+    },
+    {
+      "province": "贵州",
+      "rows_count": 32,
+      "planned_total": "118",
+      "pending_review": "32"
+    },
+    {
+      "province": "辽宁",
+      "rows_count": 53,
+      "planned_total": "227",
+      "pending_review": "53"
+    },
+    {
+      "province": "重庆",
+      "rows_count": 48,
+      "planned_total": "301",
+      "pending_review": "48"
+    },
+    {
+      "province": "青海",
+      "rows_count": 16,
+      "planned_total": "40",
+      "pending_review": "16"
+    },
+    {
+      "province": "黑龙江",
+      "rows_count": 50,
+      "planned_total": "206",
+      "pending_review": "50"
+    }
+  ],
+  "nuc_v2_suspicious": [
+    {
+      "suspicious_rows": 29
+    }
+  ],
+  "nuc_validation_summary": [
+    {
+      "rows_count": 0,
+      "reviewed_rows": null,
+      "correct_rows": null
+    }
+  ]
+}

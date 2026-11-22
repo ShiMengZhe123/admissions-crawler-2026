@@ -1,0 +1,8 @@
+school,source_url,format,scope,status,robots_access,notes
+中北大学,https://zbzs.nuc.edu.cn/info/1016/4547.htm,PNG+OCR,全国分省,partially_verified,404,31 个省级页面共 42 张官方图片
+山西师范大学,https://zsb.sxnu.edu.cn/info/1199/4459.htm,HTML,全国分省,verified_parse,403,758 条/5100 人与官网合计一致
+东北大学,https://zs.neu.edu.cn/2026n/list.htm,PNG+OCR,全国分省,verified_parse,"200 allow: /",31 张官方高清图片
+上海财经大学,https://zs.sufe.edu.cn/zsjh/list.htm,commonquery+captcha,校方门户,blocked_captcha,404,未绕过四位数字验证码
+河北工业大学,https://zs.hebut.edu.cn/,unknown,校方门户,blocked_http_403,403,学校主站确认入口但子站拒绝访问
+上海财经大学,https://10272.gaokao.haedu.cn/schoolPlan.html,HTML-JS,河南,verified_official,404,34 条/84 人；已保存 HTML 和 SHA-256
+河北工业大学,https://10080.gaokao.haedu.cn/schoolPlan.html,HTML-JS,河南,verified_official,404,23 条/73 人；已保存 HTML 和 SHA-256

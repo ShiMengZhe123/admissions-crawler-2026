@@ -1,0 +1,131 @@
+{
+  "list_root": "https://zs.neu.edu.cn/2026n/",
+  "plan_list_url": "https://zs.neu.edu.cn/2026n/list.htm",
+  "provinces": {
+    "北京": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/242c0074-ba23-4fed-9e56-1e513a3cce66_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "天津": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/e119e544-4258-489f-9bc5-1ac0d70fbd28_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "河北": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/c698f1b0-aab2-414a-8e89-3d383855dd8f_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "山西": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/2606e5e9-1114-41bf-ab82-b72bafc73bb9_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "内蒙古": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/41562bc7-03df-43c8-860f-9c3c7f797518_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "辽宁": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/44827dbc-8cfb-4d1f-aadb-de8373a1f54e_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "吉林": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/b53d2fcb-1bb2-4a80-9918-e40879d3280e_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "黑龙江": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/fa38d7ef-f39f-41a1-a7ac-4eac77c9c301_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "上海": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/ffe25e5d-e11f-4eba-be8e-a6458643a8e5_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "江苏": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/e3c6a866-8b1d-4783-94ab-f1d5ac068bce_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "浙江": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/c36dc73c-39aa-4140-8869-7197b1b77440_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "安徽": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/ed13c719-c6de-4de4-83e1-0e196c3ef28d_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "福建": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/dad6803b-a060-41a8-918c-9c2f36333e18_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "江西": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/3317a215-aa51-4879-86ca-e4a0902c3763_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "山东": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/3f392cc1-8f93-498e-aaa8-71c127343783_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "河南": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/f48f45cc-9c4c-4d7a-a286-d3fbfd7ec5b4_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "湖北": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/22578c15-5130-4b5a-aa63-91cae9c886d8_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "湖南": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/6fe2c9c7-5b4b-4195-9455-5e814134267a_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "广东": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/c0d0ba30-ab63-4e49-b578-3b98ea0f9413_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "广西": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/e28de6e3-9c36-4345-aab0-ab81866d3ded_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "海南": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/eb620600-1e7a-45a4-8465-795cdb29d959_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "重庆": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/5cf48d88-08fd-4418-872f-e2a8aac87d26_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "四川": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/98ed9776-2297-4c75-ae47-8f8e8f00a4a0_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "贵州": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/92cb240c-596b-47ba-b585-998fa63dba6f_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "云南": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/bc7634dc-8295-4558-804a-2c46219d292d_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "西藏": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/226578e2-32e3-47b6-88d6-e097caa05136_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "陕西": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/0e0ac3eb-3755-4d57-bb5d-e90df2b4273d_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "甘肃": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/d5c925bd-5a06-4566-bcc9-ed057f0f4918_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "青海": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/c77aa638-7af1-4b12-94c3-91910b9ae302_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "宁夏": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/6e9b7787-f668-469d-aa09-02a03f3cc5af_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    },
+    "新疆": {
+      "image_url": "http://zs.neu.edu.cn/_upload/article/images/d5/45/0c9104e94c8a9916224e961512d8/e1d34398-8dd6-49c6-ae49-3cd74629d0b1_d.png",
+      "list_url": "https://zs.neu.edu.cn/2026n/list.htm"
+    }
+  },
+  "missing": []
+}
