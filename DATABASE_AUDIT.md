@@ -51,6 +51,24 @@
 | 河北工业大学 | 23 | 73 | 河南官方页面校验通过 |
 | **合计** | **3047** | **17447** | 五校官方数据已入库 |
 
+## 老板目标表
+
+`gaokao_2026_enrollment` 已按老板 DDL 建立并完成迁移：
+
+- 3047 条，17447 人，5 所学校，32 个地区维度；
+- 第一次迁移新增 3047 条；
+- 第二次迁移新增 0 条、跳过 3047 条；
+- 完全重复业务行为 0，映射冲突为 0；
+- `UNIV_ID`、`ENROLLMENT_ID` 均为 NULL，待业务方确认；
+- 固定操作字段全部符合要求，`OPERATE_TIME` 均符合时间格式。
+
+目标表无主键，使用辅助账本
+`gaokao_2026_enrollment_import_ledger` 实现幂等去重。旧
+`admission_plan_v2` 和 `admission_plan` 均未删除或清空。
+
+完整结果见
+`results/gaokao_2026_enrollment/final_verification.json`。
+
 数据库检查：
 
 - 空专业名称：0。

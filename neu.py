@@ -21,10 +21,10 @@ from admissions_common import (
     normalize,
     request_with_retries,
     school_summary,
-    upsert_admission_records,
     write_csv,
     write_json,
 )
+from gaokao_enrollment import write_gaokao_records
 
 
 LIST_ROOT = "https://zs.neu.edu.cn/2026n/"
@@ -355,7 +355,15 @@ def main() -> None:
     if args.write_db:
         connection = connect_database()
         try:
-            print("DB_UPSERTED", upsert_admission_records(connection, rows))
+            result = write_gaokao_records(connection, rows)
+            print(
+                "GAOKAO_IMPORTED",
+                result["inserted"],
+                "SKIPPED",
+                result["existing_skipped"],
+                "TARGET",
+                "gaokao_2026_enrollment",
+            )
         finally:
             connection.close()
 

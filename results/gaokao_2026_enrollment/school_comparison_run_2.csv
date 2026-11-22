@@ -1,0 +1,6 @@
+﻿school,source_records,target_records,records_match,source_planned,target_planned,planned_match,source_provinces,target_provinces,provinces_match,scope_note
+上海财经大学,34,34,True,84,84,True,1,1,True,仅覆盖河南省
+东北大学,746,746,True,4596,4596,True,31,31,True,
+中北大学,1486,1486,True,7594,7594,True,31,31,True,
+山西师范大学,758,758,True,5100,5100,True,29,29,True,
+河北工业大学,23,23,True,73,73,True,1,1,True,仅覆盖河南省

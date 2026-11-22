@@ -1,0 +1,61 @@
+{
+  "school_summary": [
+    {
+      "UNIV_NAME": "东北大学",
+      "RECORD_COUNT": 746,
+      "PLANNED_TOTAL": "4596",
+      "PROVINCE_COUNT": 31
+    },
+    {
+      "UNIV_NAME": "河北工业大学",
+      "RECORD_COUNT": 23,
+      "PLANNED_TOTAL": "73",
+      "PROVINCE_COUNT": 1
+    },
+    {
+      "UNIV_NAME": "山西师范大学",
+      "RECORD_COUNT": 758,
+      "PLANNED_TOTAL": "5100",
+      "PROVINCE_COUNT": 29
+    },
+    {
+      "UNIV_NAME": "上海财经大学",
+      "RECORD_COUNT": 34,
+      "PLANNED_TOTAL": "84",
+      "PROVINCE_COUNT": 1
+    },
+    {
+      "UNIV_NAME": "中北大学",
+      "RECORD_COUNT": 1486,
+      "PLANNED_TOTAL": "7594",
+      "PROVINCE_COUNT": 31
+    },
+    {
+      "UNIV_NAME": "合计",
+      "RECORD_COUNT": 3047,
+      "PLANNED_TOTAL": "17447",
+      "PROVINCE_COUNT": 32
+    }
+  ],
+  "validation": {
+    "TOTAL_ROWS": 3047,
+    "VALID_OPERATE_ID": "3047",
+    "VALID_OPERATE_FLAG": "3047",
+    "VALID_OPERATE_IP": "3047",
+    "VALID_OPERATE_TIME": "3047",
+    "NULL_UNIV_ID": "3047",
+    "NULL_ENROLLMENT_ID": "3047",
+    "EMPTY_BRANCH": "5",
+    "EMPTY_BATCH": "1534",
+    "EMPTY_DESC": "0"
+  },
+  "duplicate_groups": 0,
+  "total_rows": 3047,
+  "province_coverage_rows": 93,
+  "detail_rows_exported": 3047,
+  "notes": {
+    "SUFE_HEBUT_SCOPE": "上海财经大学和河北工业大学仅覆盖河南省",
+    "UNIV_ID": "NULL，待确认可靠编号映射",
+    "ENROLLMENT_ID": "NULL，待确认可靠编号映射"
+  }
+}

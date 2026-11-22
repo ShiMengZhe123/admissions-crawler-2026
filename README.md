@@ -25,6 +25,9 @@
 MySQL 已完成备份与五校官方数据入库：`admission_plan_v2` 共 3047 条，
 计划合计 17447 人。原 `admission_plan` 未修改。
 
+老板指定的 `gaokao_2026_enrollment` 也已完成迁移：3047 条、17447 人、
+5 所学校、32 个地区维度。旧 `admission_plan_v2` 继续保留，不删除、不清空。
+
 OCR 专用样本 144 条已逐行对照原图核验：144 条正确、0 条错误，
 抽样准确率 100%，达到 95% 阈值。DataGrip 实际查询截图保存在
 `results/database/datagrip_query_result.png`。
@@ -76,6 +79,35 @@ MYSQL_DATABASE=admissions
 ```
 
 未设置密码时，数据库脚本会安全地交互式询问，不会打印密码。
+
+## 老板目标表迁移
+
+- 建表 SQL：`submission/sql/gaokao_2026_enrollment_schema.sql`
+- DataGrip 查询：`submission/sql/gaokao_2026_enrollment_datagrip.sql`
+- 完整迁移报告：`GAOKAO_2026_ENROLLMENT_MIGRATION.md`
+
+连续执行两次迁移：
+
+```powershell
+.\.venv\Scripts\python.exe migrate_gaokao_2026.py --run-number 1 --source table
+.\.venv\Scripts\python.exe migrate_gaokao_2026.py --run-number 2 --source table
+.\.venv\Scripts\python.exe verify_gaokao_2026.py
+```
+
+实际结果：
+
+- 第一次新增 3047 条；
+- 第二次新增 0 条、跳过 3047 条；
+- 最终目标表 3047 条、17447 人；
+- 完全重复业务行为 0；
+- 映射冲突为 0。
+
+目标表没有主键和唯一键，因此增加了独立辅助账本
+`gaokao_2026_enrollment_import_ledger` 实现重复运行保护。辅助账本不修改
+老板指定目标表的字段、类型和索引。
+
+`UNIV_ID` 和 `ENROLLMENT_ID` 因缺少覆盖五校的可靠编号规则，按要求写入
+`NULL`，已标记为待确认。
 
 ## 常用命令
 
@@ -178,6 +210,9 @@ HTML/CSV：
 
 `migrate` 只创建缺失的 `admission_plan_v2`，不删除或覆盖旧
 `admission_plan`。修改旧正式数据前必须先运行 `backup`。
+
+五校脚本的 `--write-db` 现在统一写入
+`admissions.gaokao_2026_enrollment`。
 
 查询 SQL 位于 `submission/sql/queries.sql`，五校汇总也可以使用：
 

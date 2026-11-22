@@ -16,6 +16,7 @@ results/validation/crops/
 results/validation/contact_sheets/
 results/database/datagrip_current.png
 results/database/datagrip_after_query.png
+results/gaokao_2026_enrollment/pre_fix_attempts/
 submission/*
 !submission/sql/
 !submission/sql/**

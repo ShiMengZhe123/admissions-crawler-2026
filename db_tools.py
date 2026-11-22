@@ -13,9 +13,12 @@ from admissions_common import (
     ensure_unified_schema,
     ensure_utf8_stdio,
     load_csv_records,
-    upsert_admission_records,
     write_csv,
     write_json,
+)
+from gaokao_enrollment import (
+    ensure_schema as ensure_gaokao_schema,
+    write_gaokao_records,
 )
 
 
@@ -131,7 +134,9 @@ def migrate() -> None:
     connection = connect_database()
     try:
         ensure_unified_schema(connection)
+        ensure_gaokao_schema(connection)
         print("已确保 admissions.admission_plan_v2 存在。")
+        print("已确保 admissions.gaokao_2026_enrollment 存在。")
     finally:
         connection.close()
 
@@ -164,7 +169,15 @@ def import_csv(path: Path) -> None:
     records = load_csv_records(path)
     connection = connect_database()
     try:
-        print("DB_UPSERTED", upsert_admission_records(connection, records))
+        result = write_gaokao_records(connection, records)
+        print(
+            "GAOKAO_IMPORTED",
+            result["inserted"],
+            "SKIPPED",
+            result["existing_skipped"],
+            "TARGET",
+            "gaokao_2026_enrollment",
+        )
     finally:
         connection.close()
 

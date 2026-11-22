@@ -1,0 +1,525 @@
+{
+  "run_number": 2,
+  "source_kind": "admission_plan_v2",
+  "operate_time": "2026-11-22 20:13:47",
+  "source_records": 3047,
+  "source_schools": [
+    {
+      "school": "上海财经大学",
+      "records": 34,
+      "planned_count": 84,
+      "province_count": 1,
+      "provinces": [
+        "河南"
+      ]
+    },
+    {
+      "school": "东北大学",
+      "records": 746,
+      "planned_count": 4596,
+      "province_count": 31,
+      "provinces": [
+        "上海",
+        "云南",
+        "内蒙古",
+        "北京",
+        "吉林",
+        "四川",
+        "天津",
+        "宁夏",
+        "安徽",
+        "山东",
+        "山西",
+        "广东",
+        "广西",
+        "新疆",
+        "江苏",
+        "江西",
+        "河北",
+        "河南",
+        "浙江",
+        "海南",
+        "湖北",
+        "湖南",
+        "甘肃",
+        "福建",
+        "西藏",
+        "贵州",
+        "辽宁",
+        "重庆",
+        "陕西",
+        "青海",
+        "黑龙江"
+      ]
+    },
+    {
+      "school": "中北大学",
+      "records": 1486,
+      "planned_count": 7594,
+      "province_count": 31,
+      "provinces": [
+        "上海",
+        "云南",
+        "内蒙古",
+        "北京",
+        "吉林",
+        "四川",
+        "天津",
+        "宁夏",
+        "安徽",
+        "山东",
+        "山西",
+        "广东",
+        "广西",
+        "新疆",
+        "江苏",
+        "江西",
+        "河北",
+        "河南",
+        "浙江",
+        "海南",
+        "湖北",
+        "湖南",
+        "甘肃",
+        "福建",
+        "西藏",
+        "贵州",
+        "辽宁",
+        "重庆",
+        "陕西",
+        "青海",
+        "黑龙江"
+      ]
+    },
+    {
+      "school": "山西师范大学",
+      "records": 758,
+      "planned_count": 5100,
+      "province_count": 29,
+      "provinces": [
+        "不分省",
+        "云南",
+        "内蒙古",
+        "北京",
+        "吉林",
+        "四川",
+        "天津",
+        "安徽",
+        "山东",
+        "山西",
+        "广东",
+        "广西",
+        "新疆",
+        "江苏",
+        "江西",
+        "河北",
+        "河南",
+        "浙江",
+        "海南",
+        "湖北",
+        "湖南",
+        "甘肃",
+        "福建",
+        "贵州",
+        "辽宁",
+        "重庆",
+        "陕西",
+        "青海",
+        "黑龙江"
+      ]
+    },
+    {
+      "school": "河北工业大学",
+      "records": 23,
+      "planned_count": 73,
+      "province_count": 1,
+      "provinces": [
+        "河南"
+      ]
+    }
+  ],
+  "import_result": {
+    "mapped_count": 3047,
+    "unique_target_count": 3047,
+    "importable_count": 3047,
+    "duplicate_source_count": 0,
+    "conflict_count": 0,
+    "conflicts": [],
+    "missing_fields": {
+      "selection_subject": 800,
+      "batch_name": 1534,
+      "subject_type": 5,
+      "plan_type": 746
+    },
+    "operate_time": "2026-11-22 20:13:47",
+    "inserted": 0,
+    "existing_skipped": 3047,
+    "ledger_created": 0
+  },
+  "target_schools": [
+    {
+      "school": "东北大学",
+      "records": 746,
+      "planned_count": "4596",
+      "province_count": 31,
+      "provinces": [
+        "上海",
+        "云南",
+        "内蒙古",
+        "北京",
+        "吉林",
+        "四川",
+        "天津",
+        "宁夏",
+        "安徽",
+        "山东",
+        "山西",
+        "广东",
+        "广西",
+        "新疆",
+        "江苏",
+        "江西",
+        "河北",
+        "河南",
+        "浙江",
+        "海南",
+        "湖北",
+        "湖南",
+        "甘肃",
+        "福建",
+        "西藏",
+        "贵州",
+        "辽宁",
+        "重庆",
+        "陕西",
+        "青海",
+        "黑龙江"
+      ]
+    },
+    {
+      "school": "河北工业大学",
+      "records": 23,
+      "planned_count": "73",
+      "province_count": 1,
+      "provinces": [
+        "河南"
+      ]
+    },
+    {
+      "school": "山西师范大学",
+      "records": 758,
+      "planned_count": "5100",
+      "province_count": 29,
+      "provinces": [
+        "不分省",
+        "云南",
+        "内蒙古",
+        "北京",
+        "吉林",
+        "四川",
+        "天津",
+        "安徽",
+        "山东",
+        "山西",
+        "广东",
+        "广西",
+        "新疆",
+        "江苏",
+        "江西",
+        "河北",
+        "河南",
+        "浙江",
+        "海南",
+        "湖北",
+        "湖南",
+        "甘肃",
+        "福建",
+        "贵州",
+        "辽宁",
+        "重庆",
+        "陕西",
+        "青海",
+        "黑龙江"
+      ]
+    },
+    {
+      "school": "上海财经大学",
+      "records": 34,
+      "planned_count": "84",
+      "province_count": 1,
+      "provinces": [
+        "河南"
+      ]
+    },
+    {
+      "school": "中北大学",
+      "records": 1486,
+      "planned_count": "7594",
+      "province_count": 31,
+      "provinces": [
+        "上海",
+        "云南",
+        "内蒙古",
+        "北京",
+        "吉林",
+        "四川",
+        "天津",
+        "宁夏",
+        "安徽",
+        "山东",
+        "山西",
+        "广东",
+        "广西",
+        "新疆",
+        "江苏",
+        "江西",
+        "河北",
+        "河南",
+        "浙江",
+        "海南",
+        "湖北",
+        "湖南",
+        "甘肃",
+        "福建",
+        "西藏",
+        "贵州",
+        "辽宁",
+        "重庆",
+        "陕西",
+        "青海",
+        "黑龙江"
+      ]
+    }
+  ],
+  "comparison": [
+    {
+      "school": "上海财经大学",
+      "source_records": 34,
+      "target_records": 34,
+      "records_match": true,
+      "source_planned": 84,
+      "target_planned": 84,
+      "planned_match": true,
+      "source_provinces": 1,
+      "target_provinces": 1,
+      "provinces_match": true,
+      "scope_note": "仅覆盖河南省"
+    },
+    {
+      "school": "东北大学",
+      "source_records": 746,
+      "target_records": 746,
+      "records_match": true,
+      "source_planned": 4596,
+      "target_planned": 4596,
+      "planned_match": true,
+      "source_provinces": 31,
+      "target_provinces": 31,
+      "provinces_match": true,
+      "scope_note": ""
+    },
+    {
+      "school": "中北大学",
+      "source_records": 1486,
+      "target_records": 1486,
+      "records_match": true,
+      "source_planned": 7594,
+      "target_planned": 7594,
+      "planned_match": true,
+      "source_provinces": 31,
+      "target_provinces": 31,
+      "provinces_match": true,
+      "scope_note": ""
+    },
+    {
+      "school": "山西师范大学",
+      "source_records": 758,
+      "target_records": 758,
+      "records_match": true,
+      "source_planned": 5100,
+      "target_planned": 5100,
+      "planned_match": true,
+      "source_provinces": 29,
+      "target_provinces": 29,
+      "provinces_match": true,
+      "scope_note": ""
+    },
+    {
+      "school": "河北工业大学",
+      "source_records": 23,
+      "target_records": 23,
+      "records_match": true,
+      "source_planned": 73,
+      "target_planned": 73,
+      "planned_match": true,
+      "source_provinces": 1,
+      "target_provinces": 1,
+      "provinces_match": true,
+      "scope_note": "仅覆盖河南省"
+    }
+  ],
+  "duplicate_target_groups": 0,
+  "duplicate_target_rows": 0,
+  "missing_fields": {
+    "selection_subject": 800,
+    "batch_name": 1534,
+    "subject_type": 5,
+    "plan_type": 746
+  },
+  "univ_id": "NULL（未找到可靠的院校 ID 映射）",
+  "enrollment_id": "NULL（未找到可靠的招生计划 ID 映射）",
+  "constants": {
+    "OPERATE_ID": "GK010101000000000000",
+    "OPERATE_FLAG": "1",
+    "OPERATE_IP": "127.0.0.1"
+  },
+  "schema": {
+    "create_table": "CREATE TABLE `gaokao_2026_enrollment` (\n  `ENROLLMENT_ID` varchar(100) DEFAULT NULL COMMENT '招生计划',\n  `UNIV_ID` char(20) DEFAULT NULL COMMENT '院校信息',\n  `UNIV_NAME` varchar(200) NOT NULL DEFAULT '' COMMENT '学院名称',\n  `GAOKAO_DATE` varchar(29) DEFAULT NULL COMMENT '高考年份',\n  `REGION_NAME` varchar(400) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL COMMENT '高考省份',\n  `BRANCH_NAME` varchar(200) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL COMMENT '科类选择',\n  `ADMISSIONBATCH_NAME` varchar(1000) DEFAULT NULL COMMENT '录取批次',\n  `SPECIALTY_NAME` varchar(200) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL COMMENT '专业名称',\n  `ENROLLMENT_DESC` varchar(1000) DEFAULT NULL COMMENT '招生类型-样式：招生类型：（例如普通类），选课要求：',\n  `ENROLLMENT_NUM` int NOT NULL COMMENT '招生人数',\n  `OPERATE_ID` char(20) NOT NULL COMMENT '操作人员-默认GK010101000000000000',\n  `OPERATE_FLAG` char(1) NOT NULL COMMENT '操作动作-默认1',\n  `OPERATE_TIME` char(19) NOT NULL COMMENT '操作时间',\n  `OPERATE_IP` varchar(40) NOT NULL COMMENT '操作地址默认：127.0.0.1',\n  KEY `IX_UNIV` (`UNIV_ID`),\n  KEY `IX_SPECIALTY` (`SPECIALTY_NAME`),\n  KEY `IX_ENROLLMENT` (`ENROLLMENT_DESC`),\n  KEY `IX_OPERATE` (`OPERATE_FLAG`),\n  KEY `IX_OPERATETIME` (`OPERATE_TIME`)\n) ENGINE=InnoDB DEFAULT CHARSET=gbk",
+    "columns": [
+      {
+        "COLUMN_NAME": "ENROLLMENT_ID",
+        "COLUMN_TYPE": "varchar(100)",
+        "IS_NULLABLE": "YES",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "gbk",
+        "COLLATION_NAME": "gbk_chinese_ci"
+      },
+      {
+        "COLUMN_NAME": "UNIV_ID",
+        "COLUMN_TYPE": "char(20)",
+        "IS_NULLABLE": "YES",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "gbk",
+        "COLLATION_NAME": "gbk_chinese_ci"
+      },
+      {
+        "COLUMN_NAME": "UNIV_NAME",
+        "COLUMN_TYPE": "varchar(200)",
+        "IS_NULLABLE": "NO",
+        "COLUMN_DEFAULT": "",
+        "CHARACTER_SET_NAME": "gbk",
+        "COLLATION_NAME": "gbk_chinese_ci"
+      },
+      {
+        "COLUMN_NAME": "GAOKAO_DATE",
+        "COLUMN_TYPE": "varchar(29)",
+        "IS_NULLABLE": "YES",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "gbk",
+        "COLLATION_NAME": "gbk_chinese_ci"
+      },
+      {
+        "COLUMN_NAME": "REGION_NAME",
+        "COLUMN_TYPE": "varchar(400)",
+        "IS_NULLABLE": "YES",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "utf8mb3",
+        "COLLATION_NAME": "utf8mb3_general_ci"
+      },
+      {
+        "COLUMN_NAME": "BRANCH_NAME",
+        "COLUMN_TYPE": "varchar(200)",
+        "IS_NULLABLE": "YES",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "utf8mb3",
+        "COLLATION_NAME": "utf8mb3_general_ci"
+      },
+      {
+        "COLUMN_NAME": "ADMISSIONBATCH_NAME",
+        "COLUMN_TYPE": "varchar(1000)",
+        "IS_NULLABLE": "YES",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "gbk",
+        "COLLATION_NAME": "gbk_chinese_ci"
+      },
+      {
+        "COLUMN_NAME": "SPECIALTY_NAME",
+        "COLUMN_TYPE": "varchar(200)",
+        "IS_NULLABLE": "YES",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "utf8mb3",
+        "COLLATION_NAME": "utf8mb3_general_ci"
+      },
+      {
+        "COLUMN_NAME": "ENROLLMENT_DESC",
+        "COLUMN_TYPE": "varchar(1000)",
+        "IS_NULLABLE": "YES",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "gbk",
+        "COLLATION_NAME": "gbk_chinese_ci"
+      },
+      {
+        "COLUMN_NAME": "ENROLLMENT_NUM",
+        "COLUMN_TYPE": "int",
+        "IS_NULLABLE": "NO",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": null,
+        "COLLATION_NAME": null
+      },
+      {
+        "COLUMN_NAME": "OPERATE_ID",
+        "COLUMN_TYPE": "char(20)",
+        "IS_NULLABLE": "NO",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "gbk",
+        "COLLATION_NAME": "gbk_chinese_ci"
+      },
+      {
+        "COLUMN_NAME": "OPERATE_FLAG",
+        "COLUMN_TYPE": "char(1)",
+        "IS_NULLABLE": "NO",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "gbk",
+        "COLLATION_NAME": "gbk_chinese_ci"
+      },
+      {
+        "COLUMN_NAME": "OPERATE_TIME",
+        "COLUMN_TYPE": "char(19)",
+        "IS_NULLABLE": "NO",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "gbk",
+        "COLLATION_NAME": "gbk_chinese_ci"
+      },
+      {
+        "COLUMN_NAME": "OPERATE_IP",
+        "COLUMN_TYPE": "varchar(40)",
+        "IS_NULLABLE": "NO",
+        "COLUMN_DEFAULT": null,
+        "CHARACTER_SET_NAME": "gbk",
+        "COLLATION_NAME": "gbk_chinese_ci"
+      }
+    ],
+    "indexes": [
+      {
+        "INDEX_NAME": "IX_ENROLLMENT",
+        "COLUMN_NAME": "ENROLLMENT_DESC",
+        "NON_UNIQUE": 1,
+        "SEQ_IN_INDEX": 1
+      },
+      {
+        "INDEX_NAME": "IX_OPERATE",
+        "COLUMN_NAME": "OPERATE_FLAG",
+        "NON_UNIQUE": 1,
+        "SEQ_IN_INDEX": 1
+      },
+      {
+        "INDEX_NAME": "IX_OPERATETIME",
+        "COLUMN_NAME": "OPERATE_TIME",
+        "NON_UNIQUE": 1,
+        "SEQ_IN_INDEX": 1
+      },
+      {
+        "INDEX_NAME": "IX_SPECIALTY",
+        "COLUMN_NAME": "SPECIALTY_NAME",
+        "NON_UNIQUE": 1,
+        "SEQ_IN_INDEX": 1
+      },
+      {
+        "INDEX_NAME": "IX_UNIV",
+        "COLUMN_NAME": "UNIV_ID",
+        "NON_UNIQUE": 1,
+        "SEQ_IN_INDEX": 1
+      }
+    ]
+  }
+}

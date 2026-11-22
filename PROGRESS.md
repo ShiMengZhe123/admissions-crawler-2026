@@ -9,7 +9,7 @@
 | 3. 中北大学修复 | 本地候选和 OCR 抽样完成，汇总差异待复核 | `results/nuc/nuc_candidates_final.csv` |
 | 4. 其他三校 | 东北完成；两校河南官方增量完成 | 财大河南 34 条、河工大河南 23 条；其他省份待补 |
 | 5. OCR 95% 核验 | 抽样通过 | OCR 专用样本 144/144 正确，见 `OCR_VERIFICATION.md` |
-| 6. MySQL 统一入库 | 五校完成 | 备份 758 行；`admission_plan_v2` 入库 3047 行 |
+| 6. MySQL 统一入库 | 五校完成 | `admission_plan_v2` 3047 行；老板目标表 `gaokao_2026_enrollment` 3047 行 |
 | 7. 自动测试 | 本地测试通过 | `results/logs/selftest.log` |
 | 8. 最终交付 | 持续更新 | `submission/` |
 
@@ -27,6 +27,9 @@
 - 河南阳光高考官方增量采集、HTML 快照和两校入库完成。
 - 完成 144 条 OCR 原图抽样核验，正确率 100%。
 - DataGrip 实际执行五校汇总 SQL 并保存真实结果截图。
+- 按老板 DDL 创建 `gaokao_2026_enrollment`，完成首次迁移和重复运行验证：
+  第一次新增 3047 条，第二次新增 0 条并跳过 3047 条。
+- 五校独立脚本的 `--write-db` 已统一切换到老板目标表。
 
 ## 当前阻塞
 

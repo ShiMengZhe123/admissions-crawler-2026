@@ -94,7 +94,8 @@
 - `db_data_audit.py`：只读核验旧数据；
 - `db_tools.py backup admission_plan`：创建 758 行备份
   `admission_plan_backup_20261122_091849`；
-- `db_tools.py migrate`：创建统一表 `admission_plan_v2`；
+- `db_tools.py migrate`：确保 `admission_plan_v2` 和
+  `gaokao_2026_enrollment` 均存在；
 - 三校完整数据脚本和两校河南官方增量脚本均 `--write-db` 幂等写入成功；
 - `db_tools.py queries`：数据库端实际汇总、空值和重复检查成功。
 
@@ -107,9 +108,20 @@
 - 非法计划人数 0；
 - 明显重复业务键 0。
 
-已在 DataGrip 图形界面实际执行五校汇总 `SELECT`，结果截图保存为
-`results/database/datagrip_query_result.png`；对应 SQL 为
-`results/database/datagrip_query.sql`。
+### 老板目标表迁移
+
+- 首次迁移：新增 3047 条、17447 人；
+- 第二次迁移：新增 0 条、跳过 3047 条；
+- 目标表最终：3047 条、17447 人、5 所学校、32 个地区维度；
+- 完全重复目标业务行 0；
+- 映射冲突 0；
+- `OPERATE_ID`、`OPERATE_FLAG`、`OPERATE_IP` 和
+  `OPERATE_TIME` 全部通过检查；
+- 五校独立脚本的 `--write-db` 均连续执行成功，第二次均新增 0 条。
+
+老板目标表的 DataGrip 查询文件为
+`submission/sql/gaokao_2026_enrollment_datagrip.sql`，包含五校汇总、
+各校省份覆盖、招生明细和重复行检查。
 
 ## 数据源剩余状态
 

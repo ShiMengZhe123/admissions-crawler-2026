@@ -12,6 +12,7 @@ from admissions_common import ADMISSION_FIELDS, RESULTS, ROOT, SUBMISSION
 
 SCRIPTS = [
     "admissions_common.py",
+    "gaokao_enrollment.py",
     "nuc.py",
     "nuc_reocr_counts.py",
     "sxnu.py",
@@ -20,6 +21,8 @@ SCRIPTS = [
     "sufe.py",
     "hebut.py",
     "provincial_henan.py",
+    "migrate_gaokao_2026.py",
+    "verify_gaokao_2026.py",
     "db_tools.py",
     "db_connection_check.py",
     "db_data_audit.py",
@@ -50,6 +53,7 @@ def main():
         "PROGRESS.md",
         "DATA_QUALITY.md",
         "DATABASE_AUDIT.md",
+        "GAOKAO_2026_ENROLLMENT_MIGRATION.md",
         "OCR_VERIFICATION.md",
         "SOURCE_ACCESS.md",
         "TEST_REPORT.md",
@@ -144,6 +148,13 @@ def main():
         source = RESULTS / "database" / name
         if source.exists():
             shutil.copy2(source, database_dir / name)
+    gaokao_reports = RESULTS / "gaokao_2026_enrollment"
+    if gaokao_reports.exists():
+        shutil.copytree(
+            gaokao_reports,
+            database_dir / "gaokao_2026_enrollment",
+            dirs_exist_ok=True,
+        )
     with (data_dir / "combined_candidates.csv").open(
         "w", encoding="utf-8-sig", newline=""
     ) as handle:

@@ -19,10 +19,10 @@ from admissions_common import (
     ensure_utf8_stdio,
     make_session,
     normalize,
-    upsert_admission_records,
     write_csv,
     write_json,
 )
+from gaokao_enrollment import write_gaokao_records
 
 
 OFFICIAL_URL = "https://zs.hebut.edu.cn/"
@@ -168,7 +168,15 @@ def main() -> None:
         if args.write_db:
             connection = connect_database()
             try:
-                print("DB_UPSERTED", upsert_admission_records(connection, records))
+                result = write_gaokao_records(connection, records)
+                print(
+                    "GAOKAO_IMPORTED",
+                    result["inserted"],
+                    "SKIPPED",
+                    result["existing_skipped"],
+                    "TARGET",
+                    "gaokao_2026_enrollment",
+                )
             finally:
                 connection.close()
         return
@@ -185,7 +193,15 @@ def main() -> None:
     if args.write_db:
         connection = connect_database()
         try:
-            print("DB_UPSERTED", upsert_admission_records(connection, records))
+            result = write_gaokao_records(connection, records)
+            print(
+                "GAOKAO_IMPORTED",
+                result["inserted"],
+                "SKIPPED",
+                result["existing_skipped"],
+                "TARGET",
+                "gaokao_2026_enrollment",
+            )
         finally:
             connection.close()
 

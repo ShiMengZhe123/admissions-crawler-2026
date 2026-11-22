@@ -16,12 +16,13 @@ import pandas as pd
 from lxml import html
 
 from admissions_common import (
+    connect_database,
     ensure_utf8_stdio,
     make_session,
     normalize,
-    upsert_admission_records,
     write_csv,
 )
+from gaokao_enrollment import write_gaokao_records
 
 
 URL = "https://zsb.sxnu.edu.cn/info/1199/4459.htm"
@@ -196,13 +197,16 @@ def main() -> None:
         )
         write_csv(Path("results") / "sxnu" / "sxnu_candidates.csv", records)
         if args.write_db:
-            from admissions_common import connect_database
-
             connection = connect_database()
             try:
+                result = write_gaokao_records(connection, records)
                 print(
-                    "DB_UPSERTED",
-                    upsert_admission_records(connection, records),
+                    "GAOKAO_IMPORTED",
+                    result["inserted"],
+                    "SKIPPED",
+                    result["existing_skipped"],
+                    "TARGET",
+                    "gaokao_2026_enrollment",
                 )
             finally:
                 connection.close()

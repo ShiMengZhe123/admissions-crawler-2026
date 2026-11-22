@@ -1,7 +1,8 @@
 """中北大学 2026 招生计划：增量采集、PaddleOCR 与结构化重建。
 
 默认只读取现有图片和 OCR 结果。--crawl 仅下载/识别缺失文件。
---write-db 将解析后的候选记录幂等写入 admissions.admission_plan_v2。
+--write-db 将解析后的候选记录幂等写入
+admissions.gaokao_2026_enrollment。
 """
 
 from __future__ import annotations
@@ -28,10 +29,10 @@ from admissions_common import (
     normalize,
     request_with_retries,
     school_summary,
-    upsert_admission_records,
     write_csv,
     write_json,
 )
+from gaokao_enrollment import write_gaokao_records
 
 
 INDEX_URL = "https://zbzs.nuc.edu.cn/info/1016/4547.htm"
@@ -721,8 +722,15 @@ def main() -> None:
     if args.write_db:
         connection = connect_database()
         try:
-            count = upsert_admission_records(connection, rows)
-            print("DB_UPSERTED", count)
+            result = write_gaokao_records(connection, rows)
+            print(
+                "GAOKAO_IMPORTED",
+                result["inserted"],
+                "SKIPPED",
+                result["existing_skipped"],
+                "TARGET",
+                "gaokao_2026_enrollment",
+            )
         finally:
             connection.close()
 

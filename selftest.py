@@ -209,6 +209,81 @@ def check_database():
         connection.close()
 
 
+def check_gaokao_2026_enrollment():
+    config = get_database_config(prompt=False)
+    if not config.password:
+        print("SKIP MySQL gaokao_2026_enrollment test: no password")
+        return
+    connection = connect_database(prompt=False)
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute(
+                """
+                SELECT COUNT(*), COUNT(DISTINCT UNIV_NAME),
+                       COUNT(DISTINCT REGION_NAME), SUM(ENROLLMENT_NUM)
+                FROM gaokao_2026_enrollment
+                WHERE GAOKAO_DATE = '2026'
+                """
+            )
+            rows, schools, provinces, planned = cursor.fetchone()
+            cursor.execute(
+                """
+                SELECT OPERATE_ID, OPERATE_FLAG, OPERATE_IP, OPERATE_TIME
+                FROM gaokao_2026_enrollment
+                WHERE GAOKAO_DATE = '2026'
+                LIMIT 1
+                """
+            )
+            operate_id, operate_flag, operate_ip, operate_time = (
+                cursor.fetchone()
+            )
+            cursor.execute(
+                """
+                SELECT COUNT(*) FROM (
+                    SELECT UNIV_NAME, GAOKAO_DATE, REGION_NAME,
+                           BRANCH_NAME, ADMISSIONBATCH_NAME,
+                           SPECIALTY_NAME, ENROLLMENT_DESC,
+                           ENROLLMENT_NUM, COUNT(*) AS copies
+                    FROM gaokao_2026_enrollment
+                    GROUP BY UNIV_NAME, GAOKAO_DATE, REGION_NAME,
+                             BRANCH_NAME, ADMISSIONBATCH_NAME,
+                             SPECIALTY_NAME, ENROLLMENT_DESC,
+                             ENROLLMENT_NUM
+                    HAVING COUNT(*) > 1
+                ) duplicate_rows
+                """
+            )
+            duplicate_groups = cursor.fetchone()[0]
+            cursor.execute(
+                "SELECT COUNT(*) FROM gaokao_2026_enrollment_import_ledger"
+            )
+            ledger_rows = cursor.fetchone()[0]
+        assert rows == 3047, rows
+        assert schools == 5, schools
+        assert provinces == 32, provinces
+        assert int(planned) == 17447, planned
+        assert operate_id == "GK010101000000000000"
+        assert operate_flag == "1"
+        assert operate_ip == "127.0.0.1"
+        assert re.fullmatch(
+            r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}",
+            operate_time,
+        ), operate_time
+        assert duplicate_groups == 0, duplicate_groups
+        assert ledger_rows == 3047, ledger_rows
+        print(
+            "PASS gaokao_2026_enrollment",
+            rows,
+            "rows",
+            planned,
+            "planned",
+            provinces,
+            "regions",
+        )
+    finally:
+        connection.close()
+
+
 def check_secrets():
     suspicious = []
     for path in ROOT.glob("*.py"):
@@ -254,6 +329,7 @@ def main():
     check_ocr_validation()
     check_database_screenshot()
     check_database()
+    check_gaokao_2026_enrollment()
     print("ALL LOCAL CHECKS PASSED")
 
 

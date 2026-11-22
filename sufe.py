@@ -20,10 +20,10 @@ from admissions_common import (
     make_session,
     normalize,
     request_with_retries,
-    upsert_admission_records,
     write_csv,
     write_json,
 )
+from gaokao_enrollment import write_gaokao_records
 
 
 SOURCE_PAGE = "https://zs.sufe.edu.cn/zsjh/list.htm"
@@ -178,7 +178,15 @@ def main() -> None:
         if args.write_db:
             connection = connect_database()
             try:
-                print("DB_UPSERTED", upsert_admission_records(connection, records))
+                result = write_gaokao_records(connection, records)
+                print(
+                    "GAOKAO_IMPORTED",
+                    result["inserted"],
+                    "SKIPPED",
+                    result["existing_skipped"],
+                    "TARGET",
+                    "gaokao_2026_enrollment",
+                )
             finally:
                 connection.close()
         return
@@ -198,7 +206,15 @@ def main() -> None:
     if args.write_db:
         connection = connect_database()
         try:
-            print("DB_UPSERTED", upsert_admission_records(connection, records))
+            result = write_gaokao_records(connection, records)
+            print(
+                "GAOKAO_IMPORTED",
+                result["inserted"],
+                "SKIPPED",
+                result["existing_skipped"],
+                "TARGET",
+                "gaokao_2026_enrollment",
+            )
         finally:
             connection.close()
 
